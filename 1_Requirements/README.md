@@ -65,7 +65,7 @@ A calculator is a device that performs numerical operations. The features of thi
 
 ### Where
 
-1. The calculator can be operated from anywhere.
+1. The ASMD calculator can be operated from anywhere.
 
 ### Who
 
@@ -73,7 +73,7 @@ A calculator is a device that performs numerical operations. The features of thi
 
 ### When
 
-1. Anyone who have to solve a basic calculation.
+1. Anyone who have to solve a ASMD calculation.
 
 ### How
 
