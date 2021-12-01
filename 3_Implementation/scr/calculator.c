@@ -10,7 +10,11 @@
  */
 #include "calculator.h"
 
-
+/**
+ * @brief (Reads the input expression and converting it to number and evalu' the expression result)
+ * 
+ * @return uint16_t 
+ */
 uint16_t scan_and_eval(void){
   uint16_t result;
   uint8_t key_press;
@@ -20,10 +24,10 @@ uint16_t scan_and_eval(void){
   struct Stack * number = create_stack(100);
   uint8_t temp[20]={0};
   uint8_t precedence [50]={0};
-  precedence[42]=2;				// precedence of (*)
-  precedence[47]=2;				// precedence of (/)
-  precedence[43]=1;				// precedence of (+)
-  precedence[45]=1;				// precedence of (-)
+  precedence[42]=2;		
+  precedence[47]=2;		
+  precedence[43]=1;		
+  precedence[45]=1;	
   push(op,0);
 
   while(1){
