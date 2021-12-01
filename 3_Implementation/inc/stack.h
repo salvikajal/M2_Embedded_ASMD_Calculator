@@ -13,20 +13,27 @@
 
 #include <stdint.h>
 #include <stdlib.h>
+
 #define   IS_FULL         1
 #define   IS_NOT_FULL     0
 #define   IS_EMPTY        1
 #define   IS_NOT_EMPTY    0
 
-// Stack structure
+/**
+ * @brief (Stack structure)
+ * 
+ */
 struct Stack{
   uint16_t size;
   uint16_t top;
   uint16_t * data;
 };
 
-
-//Functions prototype
+/**
+ * @brief Create a stack object
+ * 
+ * @return struct Stack* 
+ */
 struct   Stack* create_stack(uint16_t);
 void     push(struct Stack*,uint16_t);
 uint16_t peek(struct Stack*);
