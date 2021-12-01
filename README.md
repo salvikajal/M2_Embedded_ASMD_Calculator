@@ -13,8 +13,8 @@ Folder             | Description
 `5_Report`         | Documentation of whole project
 `6_Video`          | Working video of this project
 
-## Contributors List and Summary
+## Contributor
 
-PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
--------|---------|----------------|----------------|---------------|-------------|--------------
-`40021013` | YOGESHA D G |         |         |          |       |  
+PS No. |  Name   | 
+-------|---------|
+`40021013` | YOGESHA D G |
