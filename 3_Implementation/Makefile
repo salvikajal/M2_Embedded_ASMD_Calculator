@@ -1,34 +1,31 @@
 PROJ_NAME = BasicCalculator
 
-BUILD_DIR = Build
+BUILD_DIR = build
 
 # All Source code files
-SRC = project_main.c\
-src/user_utils.c
+SRC = main.c\
+src/lcd.c\
+src/stack.c\
+src/keypad.c\
+src/calculator.c
 
 # All header file paths
 INC = -I inc
 
 # Find out the OS and configure the variables accordingly
 ifdef OS	# All configurations for Windwos OS
-
 # Correct the path based on OS
    FixPath = $(subst /,\,$1)
-   
 # Name of the compiler used
    CC = avr-gcc.exe
-   
 # Name of the elf to hex file converter used
    AVR_OBJ_CPY = avr-objcopy.exe
 else #All configurations for Linux OS
    ifeq ($(shell uname), Linux)
-   
 # Correct the path based on OS
-      FixPath = $1	
-      
+      FixPath = $1				
 # Name of the compiler used
 	  CC = avr-gcc
-    
 # Name of the elf to hex file converter used
 	  AVR_OBJ_CPY = avr-objcopy 
    endif
