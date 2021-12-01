@@ -14,7 +14,8 @@
 #include <stdint.h>
 #include <avr/io.h>
 #include <util/delay.h>
-#include "../pin_config.h"
+#include "pin_config.h"
+
 #define ALL_LINES	    (((LINE0_PIN&(1U<<LINE0))>>LINE0)\
 					   &((LINE1_PIN&(1U<<LINE1))>>LINE1)\
 					   &((LINE2_PIN&(1U<<LINE2))>>LINE2)\
